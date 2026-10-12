@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ocrav Fernando — spesialis IT dan ERP Support dengan keahlian dukungan sistem, pemecahan masalah, implementasi, dan pelatihan pengguna."
+    />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>Ocrav Fernando — IT &amp; ERP Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navigation shell" aria-label="Navigasi utama">
+        <a class="wordmark" href="#home" aria-label="Ocrav Fernando, beranda">OF<span>.</span></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Buka navigasi"
+          aria-expanded="false"
+          aria-controls="navigation-links"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navigation-links" id="navigation-links">
+          <a class="navigation-link is-active" href="#about">Tentang</a>
+          <a class="navigation-link" href="#experience">Pengalaman</a>
+          <a class="navigation-link" href="#skills">Keahlian</a>
+          <a class="navigation-link" href="#education">Pendidikan</a>
+          <a class="navigation-link" href="#contact">Kontak</a>
+          <div class="language-switch" role="group" aria-label="Pilih bahasa">
+            <a class="language-option" href="index.html" lang="en">EN</a>
+            <a class="language-option is-selected" href="id.html" lang="id" aria-current="page">ID</a>
+          </div>
+          <a class="button button-small" href="mailto:ocravf@gmail.com">Hubungi Saya <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">IT &amp; ERP SUPPORT <span aria-hidden="true">·</span> TANGERANG, INDONESIA</p>
+          <h1 id="hero-title">Ocrav <span>Fernando</span></h1>
+          <p class="hero-role">Spesialis IT &amp; ERP Support</p>
+          <p class="hero-description">
+            Saya berfokus pada dukungan sistem, pemecahan masalah, dan
+            implementasi — membantu pengguna jika terdapat kendala.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Hubungi saya <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#experience"> pengalaman <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Ilustrasi abstrak teknologi dan sistem yang saling terhubung" role="img">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <svg class="orbit-animation" viewBox="0 0 420 420" aria-hidden="true">
+            <g transform="rotate(-42 210 210)">
+              <path id="satellite-track-one" d="M 371.7 210 A 161.7 79.8 0 1 1 48.3 210 A 161.7 79.8 0 1 1 371.7 210" />
+              <path id="satellite-track-one-offset" d="M 48.3 210 A 161.7 79.8 0 1 1 371.7 210 A 161.7 79.8 0 1 1 48.3 210" />
+              <g class="orbiting-satellite">
+                <circle class="satellite-glow" r="9" />
+                <circle class="satellite-core" r="5" />
+                <animateMotion dur="12s" repeatCount="indefinite" rotate="auto"><mpath href="#satellite-track-one" /></animateMotion>
+              </g>
+              <g class="orbiting-satellite satellite-secondary">
+                <circle class="satellite-glow" r="7" />
+                <circle class="satellite-core satellite-core-alt" r="3.5" />
+                <animateMotion dur="14s" repeatCount="indefinite" rotate="auto"><mpath href="#satellite-track-one-offset" /></animateMotion>
+              </g>
+            </g>
+            <g transform="rotate(42 210 210)">
+              <path id="satellite-track-two" d="M 371.7 210 A 161.7 79.8 0 1 1 48.3 210 A 161.7 79.8 0 1 1 371.7 210" />
+              <path id="satellite-track-two-offset" d="M 48.3 210 A 161.7 79.8 0 1 1 371.7 210 A 161.7 79.8 0 1 1 48.3 210" />
+              <g class="orbiting-satellite">
+                <circle class="satellite-glow" r="9" />
+                <circle class="satellite-core satellite-core-alt" r="5" />
+                <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#satellite-track-two" /></animateMotion>
+              </g>
+              <g class="orbiting-satellite satellite-secondary">
+                <circle class="satellite-glow" r="7" />
+                <circle class="satellite-core" r="3.5" />
+                <animateMotion dur="11s" repeatCount="indefinite" rotate="auto" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#satellite-track-two-offset" /></animateMotion>
+              </g>
+            </g>
+          </svg>
+          <div class="art-core">
+            <img src="assets/ocrav-fernando.jpeg" alt="Foto Ocrav Fernando" width="124" height="124" />
+          </div>
+          <span class="art-cross cross-one" aria-hidden="true">+</span>
+          <span class="art-cross cross-two" aria-hidden="true">+</span>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="section-heading">
+            <p class="eyebrow">01 — TENTANG</p>
+            <h2 id="about-title">Sistem yang baik dimulai dari <span>dukungan yang peduli.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              Saya memiliki keahlian di bidang jaringan, tata kelola TI,
+              IT Support, dan administrasi. Saat ini saya bekerja sebagai
+              IT | ERP Support, menangani pemecahan masalah dan implementasi
+              sistem, serta memberikan pelatihan teknis kepada pengguna.
+            </p>
+            <a class="text-link" href="#contact">Rekrut saya ~ <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">02 — PENGALAMAN</p>
+              <h2 id="experience-title">Pengalaman</h2>
+            </div>
+          </div>
+          <div class="experience-list">
+            <article class="experience-card">
+              <div class="experience-date"><span class="timeline-dot"></span><span>April 2025 — Sekarang</span></div>
+              <div class="experience-details">
+                <p class="experience-company">Agungmas Prima Sempurna</p>
+                <h3>IT | ERP Support</h3>
+                <p class="experience-client">On-site di PT. Sport Glove Indonesia (April 2026 — Sekarang)<br />Sebelumnya on-site di PT. Shoufong Lastindo (April 2025 — Maret 2026)</p>
+                <p>Mendukung sistem ERP untuk e-Order, e-Manage (HR), e-Production, Warehouse, dan Ekspor.</p>
+                <ul class="experience-highlights">
+                  <li>Menangani sistem HR untuk pengelolaan data karyawan, termasuk payroll, absensi, dan cuti.</li>
+                  <li>Menerima permintaan bantuan melalui telepon, mendiagnosis masalah berdasarkan panduan solusi, serta mendokumentasikan kendala dan penyesuaian.</li>
+                  <li>Menangani kendala pada ERP dan perangkat pendukung produksi.</li>
+                  <li>Melatih pengguna secara langsung, membuat panduan pengguna dalam Bahasa Indonesia dan Inggris, serta menguji dan mengimplementasikan modul baru.</li>
+                  <li>Melakukan pemeliharaan perangkat secara berkala.</li>
+                </ul>
+                <div class="tag-list"><span>Dukungan ERP</span><span>Pelatihan Pengguna</span><span>Implementasi Sistem</span></div>
+              </div>
+              <span class="experience-index" aria-hidden="true">01</span>
+            </article>
+
+            <article class="experience-card">
+              <div class="experience-date"><span class="timeline-dot"></span><span>Februari 2025</span></div>
+              <div class="experience-details">
+                <p class="experience-company">Ravel Entertainment</p>
+                <h3>Freelance - IT Support</h3>
+                <p>Memberikan dukungan IT dan pengelolaan data untuk acara, termasuk menangani kebutuhan operasional yang berubah dengan cepat.</p>
+                <ul class="experience-highlights">
+                  <li>Memasukkan data secara efisien dan akurat, menangani 600–2.000 entri data per acara.</li>
+                  <li>Mengelola dan memperbarui data serta menangani perubahan mendesak dengan cepat dan akurat.</li>
+                  <li>Merawat perangkat dan printer agar dapat digunakan dengan baik.</li>
+                </ul>
+                <div class="tag-list"><span>Dukungan Acara</span><span>Entri Data</span><span>Perawatan Perangkat</span></div>
+              </div>
+              <span class="experience-index" aria-hidden="true">02</span>
+            </article>
+
+            <article class="experience-card">
+              <div class="experience-date"><span class="timeline-dot"></span><span>Oktober — Desember 2018</span></div>
+              <div class="experience-details">
+                <p class="experience-company">Kantor Kecamatan Sepatan</p>
+                <h3>Magang — Subbagian Umum dan Kepegawaian</h3>
+                <ul class="experience-highlights">
+                  <li>Menangani administrasi dan pengarsipan, termasuk pencatatan surat masuk dan surat keluar.</li>
+                  <li>Membantu administrasi perjalanan dinas, akomodasi tamu, kehumasan dan protokol, serta pengadaan dan distribusi barang.</li>
+                </ul>
+                <div class="tag-list"><span>Administrasi</span><span>Entri Data</span><span>Pengelolaan Arsip</span></div>
+              </div>
+              <span class="experience-index" aria-hidden="true">03</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="shell skills-grid">
+          <div class="section-heading">
+            <p class="eyebrow">03 — KEAHLIAN</p>
+            <h2 class="skills-title" id="skills-title">Keahlian</h2>
+          </div>
+          <div class="skills-list" role="list" aria-label="Keahlian teknis dan profesional">
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>Pemecahan masalah ERP &amp; dukungan sistem</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>Pemecahan masalah jaringan, perangkat keras &amp; jarak jauh</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>Pelatihan pengguna &amp; dokumentasi teknis</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>Scripting otomatisasi &amp; entri data</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>MikroTik</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>AI &amp; AI Agent</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>Bahasa: Indonesia &amp; Inggris</span></div>
+            <div class="skill-item" role="listitem"><span class="skill-marker" aria-hidden="true"></span><span>MySQL</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="shell">
+          <p class="eyebrow">04 — PENDIDIKAN &amp; LAINNYA</p>
+          <h2 class="skills-title" id="education-title">Pendidikan</h2>
+          <div class="background-grid">
+            <div class="background-column">
+              <h3 class="background-label">Pendidikan</h3>
+              <article class="background-item">
+                <span class="background-year">2020 — 2024</span>
+                <h4>Teknik Informatika</h4>
+                <p>Universitas Muhammadiyah Tangerang</p>
+                <p class="background-note">Fokus: Jaringan, Tata Kelola TI &amp; Pengembangan Web <span class="gpa">IPK 3,91 / 4,00</span></p>
+              </article>
+              <article class="background-item">
+                <span class="background-year">2017 — 2020</span>
+                <h4>Teknik Komputer dan Jaringan</h4>
+                <p>SMK Negeri 2 Kab. Tangerang</p>
+                <p class="background-note">Fokus: Jaringan &amp; Perangkat Keras</p>
+              </article>
+            </div>
+            <div class="background-column">
+              <h3 class="background-label">Sertifikasi</h3>
+              <article class="background-item">
+                <span class="background-year">JANUARI 2023</span>
+                <h4>CCNA: Switching, Routing, and Wireless Essentials</h4>
+                <p>Cisco Networking Academy</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-content">
+          <p class="eyebrow">05 — KONTAK</p>
+          <h2 id="contact-title">Siap untuk peluang dan tantangan baru — <span>Info lokerrr.</span></h2>
+          <p>Hubungi saya kapanpun ~ !</p>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:ocravf@gmail.com">ocravf@gmail.com <span aria-hidden="true">↗</span></a>
+            <a class="contact-phone" href="tel:+6281388183368">+62 813-8818-3368</a>
+          </div>
+        </div>
+        <div class="contact-decoration" aria-hidden="true">OCRAV FERNANDO · OCRAV FERNANDO · OCRAV FERNANDO ·</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-content">
+        <a class="wordmark" href="#home">OF<span>.</span></a>
+        <p>IT &amp; ERP Support · Tangerang, Indonesia</p>
+        <a class="back-to-top" href="#home">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
