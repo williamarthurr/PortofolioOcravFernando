@@ -1,5 +1,3 @@
-jkjkjk
-
 const bootSkeleton = document.getElementById("skeleton-boot");
 
 const bootReady = (() => {
