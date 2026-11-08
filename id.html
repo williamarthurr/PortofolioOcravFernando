@@ -181,7 +181,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=6" />
     <script>
       window.setTimeout(function () {
         var boot = document.getElementById("skeleton-boot");
@@ -200,7 +200,7 @@
       </style>
     </noscript>
     <script src="https://cdn.jsdelivr.net/npm/animejs@4.5.0/dist/bundles/anime.umd.min.js" defer></script>
-    <script src="script.js?v=3" defer></script>
+    <script src="script.js?v=4" defer></script>
   </head>
   <body>
     <div class="skeleton-boot" id="skeleton-boot" aria-hidden="true">
@@ -240,6 +240,7 @@
         <div class="navigation-links" id="navigation-links">
           <a class="navigation-link is-active" href="#about">Tentang</a>
           <a class="navigation-link" href="#experience">Pengalaman</a>
+          <a class="navigation-link" href="#projects">Projek</a>
           <a class="navigation-link" href="#skills">Keahlian</a>
           <a class="navigation-link" href="#education">Pendidikan</a>
           <a class="navigation-link" href="#contact">Kontak</a>
@@ -431,6 +432,86 @@
         </div>
       </section>
 
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">03 — PROJEK</p>
+              <h2 id="projects-title">Projek</h2>
+            </div>
+            <p class="section-aside">Karya yang pernah aku buat — klik kartu untuk membuka projeknya.</p>
+          </div>
+
+          <!-- ============================================================
+               KARTU PROJEK — salin satu blok untuk menambah projek baru.
+               1. href     : ganti dengan link projek kamu (GitHub, demo online, dll).
+                             Untuk projek internal tanpa link publik, pakai
+                             <article class="project-card project-card--static"> saja
+                             (bukan <a>), dan .project-note sebagai labelnya.
+               2. img src  : taruh screenshot di assets/projects/ lalu ganti path-nya
+               3. Edit judul, deskripsi, dan tag di bawah.
+               ============================================================ -->
+          <div class="projects-grid" aria-label="Galeri projek">
+            <a class="project-card" href="https://serena.nandoappcustom.my.id/custom-tools" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img
+                  src="assets/projects/custom-utility.png"
+                  alt="Screenshot utilitas penggabung PDF custom dan QR generator"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-details">
+                <p class="project-category">Utilitas Kantor</p>
+                <h3>Penggabung PDF Custom &amp; QR Generator</h3>
+                <p>Utility untuk pekerjaan kantor sehari-hari: penggabung PDF custom dan QR generator yang disesuaikan dengan kebutuhan kantor.</p>
+                <div class="tag-list"><span>PDF Tools</span><span>QR Generator</span><span>Utilitas Kantor</span></div>
+                <span class="project-open">Lihat projek <span aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://netfl1xbearin.pages.dev/" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img
+                  src="assets/projects/web-katalog-netfl1xmicicow.png"
+                  alt="Screenshot website katalog Netflix sharing"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-details">
+                <p class="project-category">Web Development</p>
+                <h3>Website Katalog Netflix Sharing</h3>
+                <p>Website katalog jualan app sharing Netflix yang terintegrasi WhatsApp untuk order, lengkap dengan testimoni dan review.</p>
+                <div class="tag-list"><span>Website</span><span>Integrasi WhatsApp</span><span>Testimoni &amp; Review</span></div>
+                <span class="project-open">Lihat projek <span aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+
+            <article class="project-card project-card--static">
+              <div class="project-media">
+                <img
+                  src="assets/projects/automation-report.png"
+                  alt="Screenshot projek otomatisasi rekap laporan"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-details">
+                <p class="project-category">Otomatisasi &amp; Scripting</p>
+                <h3>Otomatisasi Rekap Laporan</h3>
+                <p>Script otomatisasi yang merekap data mentah menjadi laporan rapi di spreadsheet dan Excel, menghemat waktu kerja manual di kantor.</p>
+                <div class="tag-list"><span>Excel / Spreadsheet</span><span>Scripting</span><span>Rekap Laporan</span></div>
+                <span class="project-note">Alat internal — tidak dipublikasikan</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section skills-section" id="skills" aria-labelledby="skills-title">
         <div class="skills-traffic" aria-hidden="true">
           <span class="skills-streak streak-one"></span>
@@ -442,7 +523,7 @@
         </div>
         <div class="shell skills-grid">
           <div class="section-heading">
-            <p class="eyebrow">03 — KEAHLIAN</p>
+            <p class="eyebrow">04 — KEAHLIAN</p>
             <h2 class="skills-title" id="skills-title">Keahlian</h2>
           </div>
           <div class="skills-list" role="list" aria-label="Keahlian teknis dan profesional">
@@ -460,7 +541,7 @@
 
       <section class="section education-section" id="education" aria-labelledby="education-title">
         <div class="shell">
-          <p class="eyebrow">04 — PENDIDIKAN &amp; LAINNYA</p>
+          <p class="eyebrow">05 — PENDIDIKAN &amp; LAINNYA</p>
           <h2 class="skills-title" id="education-title">Pendidikan</h2>
           <div class="background-grid">
             <div class="background-column">
@@ -492,7 +573,7 @@
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="shell contact-content">
-          <p class="eyebrow">05 — KONTAK</p>
+          <p class="eyebrow">06 — KONTAK</p>
           <h2 id="contact-title">Siap untuk peluang dan tantangan baru — <span>Info lokerrr.</span></h2>
           <p>Hubungi saya kapanpun ~ !</p>
           <div class="contact-actions">

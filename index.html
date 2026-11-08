@@ -181,7 +181,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=6" />
     <script>
       window.setTimeout(function () {
         var boot = document.getElementById("skeleton-boot");
@@ -200,7 +200,7 @@
       </style>
     </noscript>
     <script src="https://cdn.jsdelivr.net/npm/animejs@4.5.0/dist/bundles/anime.umd.min.js" defer></script>
-    <script src="script.js?v=3" defer></script>
+    <script src="script.js?v=4" defer></script>
   </head>
   <body>
     <div class="skeleton-boot" id="skeleton-boot" aria-hidden="true">
@@ -243,6 +243,7 @@
         <div class="navigation-links" id="navigation-links">
           <a class="navigation-link is-active" href="#about" data-i18n="navAbout">About</a>
           <a class="navigation-link" href="#experience" data-i18n="navExperience">Experience</a>
+          <a class="navigation-link" href="#projects" data-i18n="navProjects">Projects</a>
           <a class="navigation-link" href="#skills" data-i18n="navSkills">Skills</a>
           <a class="navigation-link" href="#education" data-i18n="navEducation">Education</a>
           <a class="navigation-link" href="#contact" data-i18n="navContact">Contact</a>
@@ -449,6 +450,89 @@
         </div>
       </section>
 
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow" data-i18n="projectsEyebrow">03 — PROJECTS</p>
+              <h2 id="projects-title" data-i18n="projectsTitle">Projects</h2>
+            </div>
+            <p class="section-aside" data-i18n="projectsAside">Things I have built along the way — click a card to open the project.</p>
+          </div>
+
+          <!-- ============================================================
+               PROJECT CARD — copy one block to add a new project.
+               1. href     : replace with your project link (GitHub, live demo, etc.).
+                             For internal projects with no public link, use
+                             <article class="project-card project-card--static"> instead
+                             of <a>, and .project-note instead of .project-open.
+               2. img src  : drop your screenshot in assets/projects/ and update the path
+               3. Edit the title, description, and tags below.
+               ============================================================ -->
+          <div class="projects-grid" aria-label="Project showcase" data-i18n-aria="projectsLabel">
+            <a class="project-card" href="https://serena.nandoappcustom.my.id/custom-tools" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img
+                  src="assets/projects/custom-utility.png"
+                  alt="Screenshot of the custom PDF merger and QR generator office tools"
+                  data-i18n-alt="project1Alt"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-details">
+                <p class="project-category" data-i18n="project1Category">Office Utilities</p>
+                <h3 data-i18n="project1Title">Custom PDF Merger &amp; QR Generator</h3>
+                <p data-i18n="project1Description">Office utility tools built for daily needs — a custom PDF merger and a QR generator tailored to office workflows.</p>
+                <div class="tag-list"><span data-i18n="tagProjectPdf">PDF Tools</span><span data-i18n="tagProjectQr">QR Generator</span><span data-i18n="tagProjectOffice">Office Utility</span></div>
+                <span class="project-open" data-i18n="projectOpen">View project <span aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://netfl1xbearin.pages.dev/" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img
+                  src="assets/projects/web-katalog-netfl1xmicicow.png"
+                  alt="Screenshot of the Netflix sharing catalog website"
+                  data-i18n-alt="project2Alt"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-details">
+                <p class="project-category" data-i18n="project2Category">Web Development</p>
+                <h3 data-i18n="project2Title">Netflix Sharing Catalog Website</h3>
+                <p data-i18n="project2Description">A catalog website for Netflix app-sharing plans with WhatsApp-based ordering, complete with testimonials and reviews.</p>
+                <div class="tag-list"><span data-i18n="tagProjectWebsite">Catalog Website</span><span data-i18n="tagProjectWa">WhatsApp Integration</span><span data-i18n="tagProjectTestimonials">Testimonials &amp; Reviews</span></div>
+                <span class="project-open" data-i18n="projectOpen">View project <span aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+
+            <article class="project-card project-card--static">
+              <div class="project-media">
+                <img
+                  src="assets/projects/automation-report.png"
+                  alt="Screenshot of the spreadsheet report automation project"
+                  data-i18n-alt="project3Alt"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-details">
+                <p class="project-category" data-i18n="project3Category">Automation Scripting</p>
+                <h3 data-i18n="project3Title">Spreadsheet Report Automation</h3>
+                <p data-i18n="project3Description">Automation scripts that recap raw data into clean spreadsheet and Excel reports, saving hours of manual work at the office.</p>
+                <div class="tag-list"><span data-i18n="tagProjectExcel">Excel / Spreadsheet</span><span data-i18n="tagProjectScripting">Scripting</span><span data-i18n="tagProjectReporting">Reporting</span></div>
+                <span class="project-note" data-i18n="project3Note">Internal tool — not publicly accessible</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section skills-section" id="skills" aria-labelledby="skills-title">
         <div class="skills-traffic" aria-hidden="true">
           <span class="skills-streak streak-one"></span>
@@ -460,7 +544,7 @@
         </div>
         <div class="shell skills-grid">
           <div class="section-heading">
-            <p class="eyebrow" data-i18n="skillsEyebrow">03 — SKILLS</p>
+            <p class="eyebrow" data-i18n="skillsEyebrow">04 — SKILLS</p>
             <h2 class="skills-title" id="skills-title" data-i18n="skillsTitle">Skills</h2>
           </div>
           <div class="skills-list" role="list" aria-label="Technical and professional skills" data-i18n-aria="skillsLabel">
@@ -478,7 +562,7 @@
 
       <section class="section education-section" id="education" aria-labelledby="education-title" aria-label="Education and certifications" data-i18n-aria="educationSectionLabel">
         <div class="shell">
-          <h2 class="eyebrow" data-i18n="educationEyebrow">04 — EDUCATION &amp; MORE</h2>
+          <h2 class="eyebrow" data-i18n="educationEyebrow">05 — EDUCATION &amp; MORE</h2>
           <h2 class="skills-title" id="education-title" data-i18n="educationTitle">Education</h2>
 
           <div class="background-grid">
@@ -512,7 +596,7 @@
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="shell contact-content">
-          <p class="eyebrow" data-i18n="contactEyebrow">05 — CONTACT</p>
+          <p class="eyebrow" data-i18n="contactEyebrow">06 — CONTACT</p>
           <h2 id="contact-title" data-i18n="contactTitle">Excited for new opportunities and challenges - <span>Available for work.</span></h2>
           <p data-i18n="contactDescription">Feel free to contact me.</p>
           <div class="contact-actions">

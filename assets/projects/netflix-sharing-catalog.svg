@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder screenshot of the Netflix sharing catalog website with WhatsApp ordering">
+  <rect width="800" height="500" fill="#141414"/>
+
+  <!-- Browser chrome -->
+  <rect width="800" height="54" fill="#ffffff"/>
+  <rect y="53.5" width="800" height="1" fill="#e4e7e0"/>
+  <circle cx="26" cy="27" r="6" fill="#e2b4ab"/>
+  <circle cx="48" cy="27" r="6" fill="#e6cd9a"/>
+  <circle cx="70" cy="27" r="6" fill="#abd0a0"/>
+  <rect x="96" y="15" width="380" height="24" rx="12" fill="#f1f3ee" stroke="#e4e7e0"/>
+  <circle cx="112" cy="27" r="5" fill="none" stroke="#9aa396" stroke-width="1.6"/>
+  <rect x="126" y="24" width="120" height="6" rx="3" fill="#c3c9bf"/>
+
+  <!-- Site header -->
+  <rect x="40" y="70" width="84" height="22" rx="4" fill="#e50914"/>
+  <rect x="50" y="77" width="64" height="8" rx="4" fill="#ffffff" opacity="0.9"/>
+  <g fill="#ffffff" opacity="0.5">
+    <rect x="560" y="77" width="40" height="8" rx="4"/>
+    <rect x="616" y="77" width="40" height="8" rx="4"/>
+    <rect x="672" y="77" width="40" height="8" rx="4"/>
+  </g>
+  <rect x="724" y="69" width="36" height="24" rx="4" fill="#e50914" opacity="0.85"/>
+
+  <!-- Hero -->
+  <rect x="40" y="124" width="360" height="18" rx="6" fill="#ffffff" opacity="0.92"/>
+  <rect x="40" y="152" width="300" height="18" rx="6" fill="#e50914"/>
+  <rect x="40" y="184" width="250" height="8" rx="4" fill="#ffffff" opacity="0.4"/>
+  <rect x="40" y="208" width="158" height="34" rx="17" fill="#25d366"/>
+  <rect x="88" y="221" width="64" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+  <circle cx="68" cy="225" r="9" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M 64 221 l 4 4 l 5 -7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Plan cards -->
+  <g>
+    <rect x="40" y="268" width="224" height="118" rx="10" fill="#1f1f1f" stroke="#333333"/>
+    <rect x="56" y="284" width="52" height="14" rx="4" fill="#e50914" opacity="0.85"/>
+    <rect x="56" y="308" width="112" height="11" rx="4" fill="#ffffff" opacity="0.9"/>
+    <rect x="56" y="328" width="72" height="13" rx="4" fill="#ffffff" opacity="0.95"/>
+    <rect x="56" y="352" width="120" height="22" rx="11" fill="#25d366"/>
+    <rect x="86" y="359" width="60" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <g>
+    <rect x="288" y="268" width="224" height="118" rx="10" fill="#1f1f1f" stroke="#333333"/>
+    <rect x="304" y="284" width="52" height="14" rx="4" fill="#e50914" opacity="0.85"/>
+    <rect x="304" y="308" width="96" height="11" rx="4" fill="#ffffff" opacity="0.9"/>
+    <rect x="304" y="328" width="80" height="13" rx="4" fill="#ffffff" opacity="0.95"/>
+    <rect x="304" y="352" width="120" height="22" rx="11" fill="#25d366"/>
+    <rect x="334" y="359" width="60" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+  </g>
+  <g>
+    <rect x="536" y="268" width="224" height="118" rx="10" fill="#1f1f1f" stroke="#333333"/>
+    <rect x="552" y="284" width="52" height="14" rx="4" fill="#e50914" opacity="0.85"/>
+    <rect x="552" y="308" width="104" height="11" rx="4" fill="#ffffff" opacity="0.9"/>
+    <rect x="552" y="328" width="68" height="13" rx="4" fill="#ffffff" opacity="0.95"/>
+    <rect x="552" y="352" width="120" height="22" rx="11" fill="#25d366"/>
+    <rect x="582" y="359" width="60" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- Testimonials -->
+  <rect x="40" y="410" width="110" height="10" rx="5" fill="#ffffff" opacity="0.55"/>
+  <g>
+    <rect x="40" y="430" width="340" height="54" rx="8" fill="#1f1f1f" stroke="#333333"/>
+    <g fill="#f5c518">
+      <rect x="56" y="442" width="12" height="12" rx="2"/>
+      <rect x="72" y="442" width="12" height="12" rx="2"/>
+      <rect x="88" y="442" width="12" height="12" rx="2"/>
+      <rect x="104" y="442" width="12" height="12" rx="2"/>
+      <rect x="120" y="442" width="12" height="12" rx="2"/>
+    </g>
+    <rect x="56" y="462" width="180" height="7" rx="3.5" fill="#ffffff" opacity="0.45"/>
+  </g>
+  <g>
+    <rect x="420" y="430" width="340" height="54" rx="8" fill="#1f1f1f" stroke="#333333"/>
+    <g fill="#f5c518">
+      <rect x="436" y="442" width="12" height="12" rx="2"/>
+      <rect x="452" y="442" width="12" height="12" rx="2"/>
+      <rect x="468" y="442" width="12" height="12" rx="2"/>
+      <rect x="484" y="442" width="12" height="12" rx="2"/>
+      <rect x="500" y="442" width="12" height="12" rx="2"/>
+    </g>
+    <rect x="436" y="462" width="160" height="7" rx="3.5" fill="#ffffff" opacity="0.45"/>
+  </g>
+
+  <!-- Floating WhatsApp button -->
+  <circle cx="740" cy="446" r="26" fill="#25d366"/>
+  <rect x="727" y="434" width="26" height="20" rx="7" fill="#ffffff"/>
+  <path d="M 734 452 l 0 9 l 10 -9 z" fill="#ffffff"/>
+</svg>

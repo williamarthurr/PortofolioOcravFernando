@@ -96,7 +96,7 @@ if (scrollProgress) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".about-grid > *, .experience-section .section-heading, .experience-card, .skills-grid > *, .skill-item, .education-section .shell > .eyebrow, .education-section .shell > h2, .background-column, .contact-content",
+  ".about-grid > *, .experience-section .section-heading, .experience-card, .projects-section .section-heading, .project-card, .skills-grid > *, .skill-item, .education-section .shell > .eyebrow, .education-section .shell > h2, .background-column, .contact-content",
 );
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const anime = window.anime;
@@ -107,7 +107,7 @@ if (
   typeof anime.animate === "function"
 ) {
   const SIDE_REVEAL_DISTANCE = 56;
-  const sideSelector = ".experience-card, .skill-item";
+  const sideSelector = ".experience-card, .project-card, .skill-item";
 
   const isSideReveal = (target) => target.matches(sideSelector);
 

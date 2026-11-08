@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder screenshot of the custom PDF merger and QR generator office tools">
+  <rect width="800" height="500" fill="#eef1ea"/>
+
+  <!-- Browser chrome -->
+  <rect width="800" height="54" fill="#ffffff"/>
+  <rect y="53.5" width="800" height="1" fill="#e4e7e0"/>
+  <circle cx="26" cy="27" r="6" fill="#e2b4ab"/>
+  <circle cx="48" cy="27" r="6" fill="#e6cd9a"/>
+  <circle cx="70" cy="27" r="6" fill="#abd0a0"/>
+  <rect x="96" y="15" width="380" height="24" rx="12" fill="#f1f3ee" stroke="#e4e7e0"/>
+  <circle cx="112" cy="27" r="5" fill="none" stroke="#9aa396" stroke-width="1.6"/>
+  <rect x="126" y="24" width="120" height="6" rx="3" fill="#c3c9bf"/>
+
+  <!-- Page heading -->
+  <rect x="40" y="76" width="200" height="14" rx="5" fill="#20231f" opacity="0.8"/>
+  <rect x="40" y="98" width="150" height="8" rx="4" fill="#9aa396"/>
+
+  <!-- PDF merger panel -->
+  <rect x="40" y="126" width="350" height="342" rx="10" fill="#ffffff" stroke="#e4e7e0"/>
+  <circle cx="68" cy="154" r="7" fill="#729d45"/>
+  <rect x="84" y="149" width="120" height="10" rx="5" fill="#b7bfb2"/>
+
+  <rect x="64" y="176" width="302" height="76" rx="8" fill="#f6f7f4" stroke="#b7bfb2" stroke-dasharray="6 5"/>
+  <path d="M 205 204 L 205 226 M 197 212 L 205 204 L 213 212" fill="none" stroke="#729d45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="232" y="210" width="90" height="8" rx="4" fill="#c3c9bf"/>
+
+  <g>
+    <rect x="64" y="268" width="26" height="24" fill="#dfe5dc"/>
+    <path d="M 78 268 v 9 h 12 z" fill="#b7bfb2"/>
+    <rect x="102" y="272" width="130" height="8" rx="4" fill="#6f746e" opacity="0.6"/>
+    <rect x="102" y="284" width="60" height="6" rx="3" fill="#c3c9bf"/>
+  </g>
+  <g>
+    <rect x="64" y="304" width="26" height="24" fill="#dfe5dc"/>
+    <path d="M 78 304 v 9 h 12 z" fill="#b7bfb2"/>
+    <rect x="102" y="308" width="110" height="8" rx="4" fill="#6f746e" opacity="0.6"/>
+    <rect x="102" y="320" width="72" height="6" rx="3" fill="#c3c9bf"/>
+  </g>
+  <g>
+    <rect x="64" y="340" width="26" height="24" fill="#dfe5dc"/>
+    <path d="M 78 340 v 9 h 12 z" fill="#b7bfb2"/>
+    <rect x="102" y="344" width="140" height="8" rx="4" fill="#6f746e" opacity="0.6"/>
+    <rect x="102" y="356" width="56" height="6" rx="3" fill="#c3c9bf"/>
+  </g>
+
+  <rect x="64" y="384" width="302" height="36" rx="6" fill="#243c2c"/>
+  <rect x="172" y="398" width="72" height="9" rx="4.5" fill="#ffffff" opacity="0.9"/>
+  <path d="M 258 402 h 14 m -5 -5 l 5 5 l -5 5" fill="none" stroke="#b9ed73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="432" width="302" height="14" rx="4" fill="#b9ed73" opacity="0.35"/>
+
+  <!-- QR generator panel -->
+  <rect x="410" y="126" width="350" height="342" rx="10" fill="#ffffff" stroke="#e4e7e0"/>
+  <circle cx="438" cy="154" r="7" fill="#729d45"/>
+  <rect x="454" y="149" width="104" height="10" rx="5" fill="#b7bfb2"/>
+
+  <rect x="434" y="176" width="302" height="32" rx="6" fill="#ffffff" stroke="#e4e7e0"/>
+  <rect x="448" y="188" width="180" height="8" rx="4" fill="#c3c9bf"/>
+  <rect x="700" y="181" width="28" height="22" rx="4" fill="#729d45"/>
+  <path d="M 708 192 h 12 m -4 -4 l 4 4 l -4 4" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- QR code -->
+  <rect x="490" y="228" width="180" height="180" fill="#ffffff" stroke="#e4e7e0"/>
+  <g fill="#243c2c">
+    <rect x="498" y="236" width="52" height="52"/>
+    <rect x="506" y="244" width="36" height="36" fill="#ffffff"/>
+    <rect x="514" y="252" width="20" height="20"/>
+    <rect x="610" y="236" width="52" height="52"/>
+    <rect x="618" y="244" width="36" height="36" fill="#ffffff"/>
+    <rect x="626" y="252" width="20" height="20"/>
+    <rect x="498" y="348" width="52" height="52"/>
+    <rect x="506" y="356" width="36" height="36" fill="#ffffff"/>
+    <rect x="514" y="364" width="20" height="20"/>
+    <rect x="562" y="236" width="12" height="12"/>
+    <rect x="586" y="248" width="12" height="12"/>
+    <rect x="562" y="264" width="12" height="12"/>
+    <rect x="598" y="272" width="12" height="12"/>
+    <rect x="574" y="288" width="12" height="12"/>
+    <rect x="640" y="288" width="12" height="12"/>
+    <rect x="562" y="300" width="12" height="12"/>
+    <rect x="598" y="308" width="12" height="12"/>
+    <rect x="622" y="300" width="12" height="12"/>
+    <rect x="560" y="328" width="12" height="12"/>
+    <rect x="588" y="332" width="12" height="12"/>
+    <rect x="620" y="336" width="12" height="12"/>
+    <rect x="646" y="324" width="12" height="12"/>
+    <rect x="560" y="376" width="12" height="12"/>
+    <rect x="588" y="368" width="12" height="12"/>
+    <rect x="616" y="372" width="12" height="12"/>
+    <rect x="640" y="384" width="12" height="12"/>
+    <rect x="574" y="392" width="12" height="12"/>
+  </g>
+
+  <rect x="434" y="420" width="302" height="36" rx="6" fill="#b9ed73"/>
+  <rect x="546" y="434" width="66" height="9" rx="4.5" fill="#243c2c" opacity="0.85"/>
+  <path d="M 626 434 v 10 m -5 -5 l 5 5 l 5 -5" fill="none" stroke="#243c2c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
