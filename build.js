@@ -13,6 +13,7 @@ const SOURCE = path.join(ROOT, "index.html");
 const OUTPUT = path.join(ROOT, "id.html");
 const DICTIONARY = path.join(ROOT, "translations.json");
 const DIST = path.join(ROOT, "dist");
+const SYNC_FILES = ["index.html", "id.html", "script.js", "styles.css", path.join("assets", "og-preview.png")];
 const CHECK_ONLY = process.argv.includes("--check");
 
 const source = fs.readFileSync(SOURCE, "utf8");
@@ -138,6 +139,21 @@ function generate() {
     /<title>[\s\S]*?<\/title>/,
     `<title>${lookup("documentTitle", "title")}</title>`,
   );
+
+  // Share-preview tags mirror the locale of the page (same image for both locales).
+  for (const [attribute, name, key] of [
+    ["property", "og:title", "ogTitle"],
+    ["property", "og:description", "ogDescription"],
+    ["property", "og:url", "ogUrl"],
+    ["property", "og:image:alt", "ogImageAlt"],
+    ["name", "twitter:title", "ogTitle"],
+    ["name", "twitter:description", "ogDescription"],
+    ["name", "twitter:url", "ogUrl"],
+    ["name", "twitter:image:alt", "ogImageAlt"],
+  ]) {
+    const pattern = new RegExp(`(<meta\\s+${attribute}="${name}"\\s+content=")[\\s\\S]*?("\\s*\\/>)`);
+    html = html.replace(pattern, (_, open, close) => open + escapeAttribute(lookup(key, name)) + close);
+  }
   html = html.replace(
     /<a class="language-option[^"]*"[^>]*data-locale="(en|id)"[^>]*>[^<]*<\/a>/g,
     (anchor, locale) => {
@@ -168,11 +184,17 @@ if (CHECK_ONLY) {
   const problems = [];
   if (current === null || normalizeEol(current) !== normalizeEol(generated)) problems.push("id.html");
   if (fs.existsSync(DIST)) {
-    for (const file of ["index.html", "id.html", "script.js", "styles.css"]) {
+    for (const file of SYNC_FILES.filter((item) => !item.endsWith(".png"))) {
       const expected = file === "id.html" ? generated : fs.readFileSync(path.join(ROOT, file), "utf8");
       const actual = fs.readFileSync(path.join(DIST, file), "utf8");
       if (normalizeEol(actual) !== normalizeEol(expected)) problems.push(`dist/${file}`);
     }
+    const ogAsset = path.join("assets", "og-preview.png");
+    const sourcePng = fs.readFileSync(path.join(ROOT, ogAsset));
+    const deployedPng = fs.existsSync(path.join(DIST, ogAsset))
+      ? fs.readFileSync(path.join(DIST, ogAsset))
+      : null;
+    if (!deployedPng || !deployedPng.equals(sourcePng)) problems.push(`dist/${ogAsset}`);
   }
   if (problems.length) {
     fail(`out of date: ${problems.join(", ")} — run \`node build.js\``);
@@ -182,9 +204,11 @@ if (CHECK_ONLY) {
   fs.writeFileSync(OUTPUT, generated, "utf8");
   console.log("build.js: wrote id.html");
   if (fs.existsSync(DIST)) {
-    for (const file of ["index.html", "id.html", "script.js", "styles.css"]) {
-      fs.copyFileSync(path.join(ROOT, file), path.join(DIST, file));
+    for (const file of SYNC_FILES) {
+      const destination = path.join(DIST, file);
+      fs.mkdirSync(path.dirname(destination), { recursive: true });
+      fs.copyFileSync(path.join(ROOT, file), destination);
     }
-    console.log("build.js: synced dist/ (index.html, id.html, script.js, styles.css)");
+    console.log("build.js: synced dist/ (pages, scripts, styles, og-preview.png)");
   }
 }
