@@ -13,7 +13,14 @@ const SOURCE = path.join(ROOT, "index.html");
 const OUTPUT = path.join(ROOT, "id.html");
 const DICTIONARY = path.join(ROOT, "translations.json");
 const DIST = path.join(ROOT, "dist");
-const SYNC_FILES = ["index.html", "id.html", "script.js", "styles.css", path.join("assets", "og-preview.png")];
+const SYNC_FILES = [
+  "index.html",
+  "id.html",
+  "script.js",
+  "styles.css",
+  path.join("assets", "og-preview.png"),
+  path.join("assets", "og-card.png"),
+];
 const CHECK_ONLY = process.argv.includes("--check");
 
 const source = fs.readFileSync(SOURCE, "utf8");
@@ -189,12 +196,13 @@ if (CHECK_ONLY) {
       const actual = fs.readFileSync(path.join(DIST, file), "utf8");
       if (normalizeEol(actual) !== normalizeEol(expected)) problems.push(`dist/${file}`);
     }
-    const ogAsset = path.join("assets", "og-preview.png");
-    const sourcePng = fs.readFileSync(path.join(ROOT, ogAsset));
-    const deployedPng = fs.existsSync(path.join(DIST, ogAsset))
-      ? fs.readFileSync(path.join(DIST, ogAsset))
-      : null;
-    if (!deployedPng || !deployedPng.equals(sourcePng)) problems.push(`dist/${ogAsset}`);
+    for (const ogAsset of SYNC_FILES.filter((item) => item.endsWith(".png"))) {
+      const sourcePng = fs.readFileSync(path.join(ROOT, ogAsset));
+      const deployedPng = fs.existsSync(path.join(DIST, ogAsset))
+        ? fs.readFileSync(path.join(DIST, ogAsset))
+        : null;
+      if (!deployedPng || !deployedPng.equals(sourcePng)) problems.push(`dist/${ogAsset}`);
+    }
   }
   if (problems.length) {
     fail(`out of date: ${problems.join(", ")} — run \`node build.js\``);
@@ -209,6 +217,6 @@ if (CHECK_ONLY) {
       fs.mkdirSync(path.dirname(destination), { recursive: true });
       fs.copyFileSync(path.join(ROOT, file), destination);
     }
-    console.log("build.js: synced dist/ (pages, scripts, styles, og-preview.png)");
+    console.log("build.js: synced dist/ (pages, scripts, styles, OG assets)");
   }
 }
